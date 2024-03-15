@@ -1,25 +1,33 @@
 {
-  "name": "galaxy",
+  "name": "planetarium",
   "version": "1.0.0",
-  "description": "api about galaxies ✴️",
+  "description": "Planetarium API",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [
-    "galaxy",
+    "planetarium",
     "api",
-    "rest"
+    "rest",
+    "api"
   ],
-  "author": "Shehroz Raxmatov",
+  "author": "Bexruz Xolmuminov",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^8.2.0"
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^2.0.20"
   }
 }

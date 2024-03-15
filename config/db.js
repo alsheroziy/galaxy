@@ -1,8 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const connectDB = async () => {
-    const connecting = await mongoose.connect(process.env.MONGO_URI)
-    console.log(`mongodb connected to ${connecting.host}`)
+  mongoose.set('strictQuery', false)
+  const connecting = await mongoose.connect(process.env.MONGO_URI)
+
+  console.log(`MongoDB connected to: ${connecting.connection.host}`.bgBlue)
 }
 
-module.exports = connectDB;
+module.exports = connectDB

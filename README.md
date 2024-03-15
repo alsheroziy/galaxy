@@ -1,2 +1,0 @@
-# galaxy
-api about galaxies ✴️
